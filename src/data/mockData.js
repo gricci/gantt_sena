@@ -319,281 +319,141 @@ export const mockTransactions = [
 
 export const mockBarData = [
   {
-    country: "AD",
-    "hot dog": 137,
-    "hot dogColor": "hsl(229, 70%, 50%)",
-    burger: 96,
-    burgerColor: "hsl(296, 70%, 50%)",
-    kebab: 72,
-    kebabColor: "hsl(97, 70%, 50%)",
-    donut: 140,
-    donutColor: "hsl(340, 70%, 50%)",
+    task: "Task 1",
+    pending: 40,
+    inProgress: 30,
+    completed: 30
   },
   {
-    country: "AE",
-    "hot dog": 55,
-    "hot dogColor": "hsl(307, 70%, 50%)",
-    burger: 28,
-    burgerColor: "hsl(111, 70%, 50%)",
-    kebab: 58,
-    kebabColor: "hsl(273, 70%, 50%)",
-    donut: 29,
-    donutColor: "hsl(275, 70%, 50%)",
+    task: "Task 2",
+    pending: 70,
+    inProgress: 10,
+    completed: 20
   },
   {
-    country: "AF",
-    "hot dog": 109,
-    "hot dogColor": "hsl(72, 70%, 50%)",
-    burger: 23,
-    burgerColor: "hsl(96, 70%, 50%)",
-    kebab: 34,
-    kebabColor: "hsl(106, 70%, 50%)",
-    donut: 152,
-    donutColor: "hsl(256, 70%, 50%)",
+    task: "Task 3",
+    pending: 20,
+    inProgress: 50,
+    completed: 30
   },
   {
-    country: "AG",
-    "hot dog": 133,
-    "hot dogColor": "hsl(257, 70%, 50%)",
-    burger: 52,
-    burgerColor: "hsl(326, 70%, 50%)",
-    kebab: 43,
-    kebabColor: "hsl(110, 70%, 50%)",
-    donut: 83,
-    donutColor: "hsl(9, 70%, 50%)",
+    task: "Task 4",
+    pending: 60,
+    inProgress: 20,
+    completed: 20
   },
   {
-    country: "AI",
-    "hot dog": 81,
-    "hot dogColor": "hsl(190, 70%, 50%)",
-    burger: 80,
-    burgerColor: "hsl(325, 70%, 50%)",
-    kebab: 112,
-    kebabColor: "hsl(54, 70%, 50%)",
-    donut: 35,
-    donutColor: "hsl(285, 70%, 50%)",
-  },
-  {
-    country: "AL",
-    "hot dog": 66,
-    "hot dogColor": "hsl(208, 70%, 50%)",
-    burger: 111,
-    burgerColor: "hsl(334, 70%, 50%)",
-    kebab: 167,
-    kebabColor: "hsl(182, 70%, 50%)",
-    donut: 18,
-    donutColor: "hsl(76, 70%, 50%)",
-  },
-  {
-    country: "AM",
-    "hot dog": 80,
-    "hot dogColor": "hsl(87, 70%, 50%)",
-    burger: 47,
-    burgerColor: "hsl(141, 70%, 50%)",
-    kebab: 158,
-    kebabColor: "hsl(224, 70%, 50%)",
-    donut: 49,
-    donutColor: "hsl(274, 70%, 50%)",
-  },
+    task: "Task 5",
+    pending: 50,
+    inProgress: 30,
+    completed: 20
+  }
 ];
 
 export const mockPieData = [
   {
-    id: "hack",
-    label: "hack",
-    value: 239,
+    id: "Task 1",
+    label: "Task 1",
+    value: 100,
     color: "hsl(104, 70%, 50%)",
   },
   {
-    id: "make",
-    label: "make",
-    value: 170,
+    id: "Task 2",
+    label: "Task 2",
+    value: 150,
     color: "hsl(162, 70%, 50%)",
   },
   {
-    id: "go",
-    label: "go",
-    value: 322,
+    id: "Task 3",
+    label: "Task 3",
+    value: 200,
     color: "hsl(291, 70%, 50%)",
   },
   {
-    id: "lisp",
-    label: "lisp",
-    value: 503,
+    id: "Task 4",
+    label: "Task 4",
+    value: 50,
     color: "hsl(229, 70%, 50%)",
   },
   {
-    id: "scala",
-    label: "scala",
-    value: 584,
+    id: "Task 5",
+    label: "Task 5",
+    value: 120,
     color: "hsl(344, 70%, 50%)",
   },
 ];
 
+// mockData.js
 export const mockLineData = [
   {
-    id: "japan",
-    color: tokens("dark").greenAccent[500],
+    id: "pending",
+    color: "hsl(104, 70%, 50%)",
     data: [
-      {
-        x: "plane",
-        y: 101,
-      },
-      {
-        x: "helicopter",
-        y: 75,
-      },
-      {
-        x: "boat",
-        y: 36,
-      },
-      {
-        x: "train",
-        y: 216,
-      },
-      {
-        x: "subway",
-        y: 35,
-      },
-      {
-        x: "bus",
-        y: 236,
-      },
-      {
-        x: "car",
-        y: 88,
-      },
-      {
-        x: "moto",
-        y: 232,
-      },
-      {
-        x: "bicycle",
-        y: 281,
-      },
-      {
-        x: "horse",
-        y: 1,
-      },
-      {
-        x: "skateboard",
-        y: 35,
-      },
-      {
-        x: "others",
-        y: 14,
-      },
+      { x: "Task 1", y: 20 },
+      { x: "Task 2", y: 30 },
+      { x: "Task 3", y: 25 },
+      { x: "Task 4", y: 40 }, // Nueva tarea
+      { x: "Task 5", y: 35 }, // Nueva tarea
+      { x: "Task 6", y: 15 }, // Nueva tarea
+      { x: "Task 7", y: 28 }, // Nueva tarea
+      { x: "Task 8", y: 22 }, // Nueva tarea
+      { x: "Task 9", y: 18 }, // Nueva tarea
+      { x: "Task 10", y: 33 }, // Nueva tarea
+      { x: "Task 11", y: 27 }, // Nueva tarea
+      { x: "Task 12", y: 38 }, // Nueva tarea
+      { x: "Task 13", y: 29 }, // Nueva tarea
+      { x: "Task 14", y: 24 }, // Nueva tarea
+      { x: "Task 15", y: 19 }, // Nueva tarea
+      // Agrega más datos de tareas según sea necesario
     ],
   },
   {
-    id: "france",
-    color: tokens("dark").blueAccent[300],
+    id: "inProgress",
+    color: "hsl(162, 70%, 50%)",
     data: [
-      {
-        x: "plane",
-        y: 212,
-      },
-      {
-        x: "helicopter",
-        y: 190,
-      },
-      {
-        x: "boat",
-        y: 270,
-      },
-      {
-        x: "train",
-        y: 9,
-      },
-      {
-        x: "subway",
-        y: 75,
-      },
-      {
-        x: "bus",
-        y: 175,
-      },
-      {
-        x: "car",
-        y: 33,
-      },
-      {
-        x: "moto",
-        y: 189,
-      },
-      {
-        x: "bicycle",
-        y: 97,
-      },
-      {
-        x: "horse",
-        y: 87,
-      },
-      {
-        x: "skateboard",
-        y: 299,
-      },
-      {
-        x: "others",
-        y: 251,
-      },
+      { x: "Task 1", y: 10 },
+      { x: "Task 2", y: 15 },
+      { x: "Task 3", y: 20 },
+      { x: "Task 4", y: 25 }, // Nueva tarea
+      { x: "Task 5", y: 30 }, // Nueva tarea
+      { x: "Task 6", y: 12 }, // Nueva tarea
+      { x: "Task 7", y: 18 }, // Nueva tarea
+      { x: "Task 8", y: 24 }, // Nueva tarea
+      { x: "Task 9", y: 17 }, // Nueva tarea
+      { x: "Task 10", y: 22 }, // Nueva tarea
+      { x: "Task 11", y: 19 }, // Nueva tarea
+      { x: "Task 12", y: 27 }, // Nueva tarea
+      { x: "Task 13", y: 21 }, // Nueva tarea
+      { x: "Task 14", y: 26 }, // Nueva tarea
+      { x: "Task 15", y: 13 }, // Nueva tarea
+      // Agrega más datos de tareas según sea necesario
     ],
   },
   {
-    id: "us",
-    color: tokens("dark").redAccent[200],
+    id: "completed",
+    color: "hsl(291, 70%, 50%)",
     data: [
-      {
-        x: "plane",
-        y: 191,
-      },
-      {
-        x: "helicopter",
-        y: 136,
-      },
-      {
-        x: "boat",
-        y: 91,
-      },
-      {
-        x: "train",
-        y: 190,
-      },
-      {
-        x: "subway",
-        y: 211,
-      },
-      {
-        x: "bus",
-        y: 152,
-      },
-      {
-        x: "car",
-        y: 189,
-      },
-      {
-        x: "moto",
-        y: 152,
-      },
-      {
-        x: "bicycle",
-        y: 8,
-      },
-      {
-        x: "horse",
-        y: 197,
-      },
-      {
-        x: "skateboard",
-        y: 107,
-      },
-      {
-        x: "others",
-        y: 170,
-      },
+      { x: "Task 1", y: 70 },
+      { x: "Task 2", y: 55 },
+      { x: "Task 3", y: 55 },
+      { x: "Task 4", y: 50 }, // Nueva tarea
+      { x: "Task 5", y: 45 }, // Nueva tarea
+      { x: "Task 6", y: 60 }, // Nueva tarea
+      { x: "Task 7", y: 52 }, // Nueva tarea
+      { x: "Task 8", y: 48 }, // Nueva tarea
+      { x: "Task 9", y: 63 }, // Nueva tarea
+      { x: "Task 10", y: 58 }, // Nueva tarea
+      { x: "Task 11", y: 51 }, // Nueva tarea
+      { x: "Task 12", y: 65 }, // Nueva tarea
+      { x: "Task 13", y: 57 }, // Nueva tarea
+      { x: "Task 14", y: 49 }, // Nueva tarea
+      { x: "Task 15", y: 62 }, // Nueva tarea
+      // Agrega más datos de tareas según sea necesario
     ],
   },
 ];
+
+
 
 export const mockGeographyData = [
   {
